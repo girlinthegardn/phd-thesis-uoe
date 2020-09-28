@@ -1,0 +1,52 @@
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+\usepackage[top=20mm,bottom=20mm,left=30mm,right=30mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec} 
+\setmainfont{Arial}
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{graphicx}
+\usepackage{fncychap}
+
+\usepackage{titlesec}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage[title, titletoc]{appendix}
+
+\titleformat{\chapter}{\normalfont\LARGE}{\thechapter\,$\vert$}{20pt}{\LARGE}{\setcounter{chapter}{0}}
+\setlength{\headheight}{0pt}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
+\titlespacing*{\section}{0pt}{-16pt}{0pt}
+\titlespacing*{\subsection}{0pt}{-16pt}{0pt}
+\titlespacing*{\subsubsection}{0pt}{-16pt}{0pt}
+
+\usepackage{abstract}
+\setlength{\absleftindent}{-6mm}
+\setlength{\absrightindent}{-6mm}
+
+\usepackage{epstopdf}
+\usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage[
+    style=apa,
+    backend=biber,
+    sortcites=true,
+    sorting=nyt,
+%    isbn=false,
+%    url=false,
+%    doi=false,
+%    eprint=false,
+    hyperref=false,
+    backref=false,
+%    firstinits=false,
+]{biblatex}
+
+\DeclareLanguageMapping{british}{british-apa}
+
+\let \citeNP \cite
+\let \citeA \textcite
+\let \cite \parencite
+
+\bibliography{references}

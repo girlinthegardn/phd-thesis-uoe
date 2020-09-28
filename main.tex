@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper,twoside]{report}
+\input{packages.tex}
+
+\begin{document}
+\pagenumbering{roman}
+\begin{center}
+{\Large Title.}
+\vspace{6mm}
+
+{Submitted by Your Name to the University of Exeter as a thesis for the degree of Doctor of Philosophy in Your Studies, Date.
+\vspace{6mm}}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=60mm]{images/UoE_logo.png}
+\end{figure}
+
+This thesis is available for Library use on the understanding that it is copyright material and that no quotation from the thesis may be published without proper acknowledgement.\\
+\vspace{6mm}
+I certify that all material in this thesis which is not my own work has been identified and that no material has previously been submitted and approved for the award of a degree by this or any other University.\\
+\vspace{16mm}
+
+...........................................................................................................
+\end{center}
+
+\begin{abstract}
+\input{Chapters/abstract}
+\end{abstract}
+\section*{Acknowledgements}
+\input{docs/acknowledgements}
+\clearpage
+\section*{Publications Relating to this Thesis}
+\input{docs/publications}
+\clearpage
+\section*{Author's Declaration}
+\input{docs/declaration}
+\clearpage
+\section*{Abbreviations}
+\input{docs/abbreviations}
+\clearpage
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction}
+\pagenumbering{arabic}
+\input{Chapters/chapter1}
+
+\chapter{Background}
+\input{Chapters/chapter2}
+
+\chapter{Systematic Review}
+\input{Chapters/chapter3}
+
+\chapter{Mixed-method Evaluation}
+\input{Chapters/chapter4}
+
+\chapter{Qualitative Evaluation}
+\input{Chapters/chapter5}
+
+
+\begin{appendices}
+\chapter*{Appendices}
+\section*{Appendix A1. Inclusion Criteria}
+
+\clearpage
+
+
+\end{appendices}
+\end{document}
